@@ -1,0 +1,119 @@
+html {
+  scroll-behavior: smooth;
+}
+
+.bg-img {
+  background: linear-gradient(45deg, #d422b1, #ffce00);
+  background-size: 400% 400%;
+  animation: GradientBackground 10s ease infinite;
+}
+
+.featured {
+  background: linear-gradient(45deg, #d422b1, #ffce00);
+  background-size: 400% 400%;
+  animation: GradientBackground 10s ease infinite;
+}
+
+@keyframes GradientBackground {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.oracle {
+  background: linear-gradient(45deg, #38b2ac, #1cdad1);
+  background-size: 400% 400%;
+  animation: OracleGradient 10s ease infinite;
+}
+
+@keyframes OracleGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.tonken {
+  background: linear-gradient(45deg, #9f7aea, #5107e9);
+  background-size: 400% 400%;
+  animation: TonkenGradient 10s ease infinite;
+}
+
+@keyframes TonkenGradient {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+body::-webkit-scrollbar {
+  width: 5px; /* width of the entire scrollbar */
+}
+body::-webkit-scrollbar-track {
+  background: #1a202c; /* color of the tracking area */
+}
+body::-webkit-scrollbar-thumb {
+  background-color: #edf2f7; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  /* creates padding around scroll thumb */
+}
+
+body {
+  scrollbar-width: thin; /* "auto" or "thin"  */
+  scrollbar-color: blue orange; /* scroll thumb & track */
+}
+
+.gradient-text {
+  background: -webkit-linear-gradient(65deg, #d422b1, #ffce00);
+  -webkit-background-clip: text;
+  background-size: 200% 200%;
+
+  -webkit-text-fill-color: transparent;
+
+  animation: GradientText 10s ease infinite;
+}
+
+@keyframes GradientText {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.scene,
+canvas {
+  height: 50%;
+  outline: none;
+  border: none;
+  z-index: 0;
+  overflow: hidden;
+}

@@ -94,6 +94,15 @@ body {
 
   animation: GradientText 10s ease infinite;
 }
+.gradient-border {
+  border-color: -webkit-linear-gradient(65deg, #d422b1, #ffce00);
+  -webkit-background-clip: text;
+  background-size: 200% 200%;
+
+  -webkit-text-fill-color: transparent;
+
+  animation: GradientText 10s ease infinite;
+}
 
 @keyframes GradientText {
   0% {
